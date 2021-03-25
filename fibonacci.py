@@ -10,7 +10,7 @@ def fibonacci(num):
     if num <= 1:
         return num
     else:
-        return fibonacci(num-1) + fibonacci(num-2)
+        return （fibonacci(num-1) + fibonacci(num-2)） % （10**9 + 7）
 
 
 def fibonacci2(num):
@@ -25,7 +25,7 @@ def fibonacci2(num):
     b = 0
     for i in range(num-1):
         b, a = a, a + b
-    return a
+    return a % （10**9 + 7）
 
 
 if __name__ == '__main__':
